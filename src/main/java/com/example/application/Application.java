@@ -19,8 +19,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @PWA(
     name = "Vaadin CRM",
     shortName = "CRM",
-    offlinePath="offline.html",
-    offlineResources = { "./images/offline.png"}
+    offlinePath = "offline.html",
+    offlineResources = {"./images/offline.png"}
 )
 public class Application extends SpringBootServletInitializer implements AppShellConfigurator {
 
