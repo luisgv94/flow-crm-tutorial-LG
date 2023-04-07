@@ -58,6 +58,7 @@ public class ContactForm extends FormLayout {
         save.addClickShortcut(Key.ENTER);
         close.addClickShortcut(Key.ESCAPE);
 
+        // Here we configure the Form API listener to be used for other components by add**Listener
         save.addClickListener(event -> validateAndSave());
         delete.addClickListener(event -> fireEvent(new DeleteEvent(this, binder.getBean())));
         close.addClickListener(event -> fireEvent(new CloseEvent(this)));
@@ -76,7 +77,7 @@ public class ContactForm extends FormLayout {
         }
     }
 
-    // Events
+    // ContactForm Events API
     public static abstract class ContactFormEvent extends ComponentEvent<ContactForm> {
         private Contact contact;
 
