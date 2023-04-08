@@ -3,9 +3,17 @@ a[highlight] {
     text-decoration: underline;
 }
 
+.company-chart {
+    width: 100%;
+    max-width: 700px;
+}
+
 @media all and (max-width: 1100px) {
     .list-view.editing .toolbar,
     .list-view.editing .contact-grid {
         display: none;
+    }
+    .company-chart {
+        width: 100%;
     }
 }
